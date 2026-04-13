@@ -1,0 +1,2072 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spartus Digital | Agência de Marketing Digital para Brasileiros nos EUA</title>
+  <meta name="description" content="A agência de marketing digital especializada em ajudar brasileiros prestadores de serviços nos EUA a conquistar mais clientes e escalar seus negócios com estratégia e resultados reais.">
+  <meta name="keywords" content="marketing digital, brasileiros nos EUA, agência marketing, tráfego pago, SEO, redes sociais, prestadores de serviço EUA">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-T8VZVTD7');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1686884989150794');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1686884989150794&ev=PageView&noscript=1"/></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+  <style>
+    /* ================================================================
+       RESET & CSS VARIABLES
+    ================================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:           #a67c52;
+      --gold-light:     #e3d08b;
+      --gold-gradient:  linear-gradient(135deg, #a67c52 0%, #e3d08b 100%);
+      --black:          #000000;
+      --dark:           #080808;
+      --dark-2:         #101010;
+      --dark-3:         #1a1a1a;
+      --white:          #ffffff;
+      --gray:           #888888;
+      --gray-light:     #cccccc;
+      --font-title:     'Cinzel', serif;
+      --font-body:      'Poppins', sans-serif;
+      --ease:           cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --transition:     all 0.4s var(--ease);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-body);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    section { scroll-margin-top: 80px; }
+
+    /* ================================================================
+       UTILITIES
+    ================================================================ */
+    .gold-text {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-family: var(--font-title);
+      font-size: clamp(30px, 4vw, 54px);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .section-subtitle {
+      font-size: 17px;
+      color: var(--gray-light);
+      font-weight: 300;
+      line-height: 1.75;
+      max-width: 620px;
+    }
+
+    .gold-divider {
+      width: 56px;
+      height: 2px;
+      background: var(--gold-gradient);
+      margin: 20px 0;
+    }
+
+    .gold-divider.center { margin: 20px auto; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gold-gradient);
+      color: #000;
+      padding: 16px 36px;
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      border-radius: 2px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-primary:hover {
+      opacity: 0.88;
+      transform: translateY(-2px);
+      box-shadow: 0 18px 44px rgba(166, 124, 82, 0.32);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid rgba(255,255,255,0.18);
+      color: var(--white);
+      padding: 16px 36px;
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 400;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    /* ================================================================
+       PAGE LOADER
+    ================================================================ */
+    #loader {
+      position: fixed;
+      inset: 0;
+      background: var(--black);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.7s ease, visibility 0.7s ease;
+    }
+
+    #loader.hidden { opacity: 0; visibility: hidden; }
+
+    .loader-logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      opacity: 0;
+    }
+
+    .loader-text-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .loader-wordmark {
+      font-family: var(--font-title);
+      font-size: 30px;
+      letter-spacing: 10px;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .loader-sub {
+      font-family: var(--font-body);
+      font-size: 8px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 6px;
+      display: block;
+    }
+
+    .loader-bar-track {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .loader-bar {
+      height: 100%;
+      width: 0%;
+      background: var(--gold-gradient);
+      transition: width 1.1s var(--ease);
+    }
+
+    /* Pulsing dot */
+    @keyframes pulse { 0%,100%{transform:scale(1);opacity:1} 50%{transform:scale(1.4);opacity:0.5} }
+
+    /* ================================================================
+       NAVIGATION
+    ================================================================ */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 900;
+      padding: 22px 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: padding 0.4s var(--ease), background 0.4s ease, border-color 0.4s ease;
+      border-bottom: 1px solid transparent;
+    }
+
+    #navbar.scrolled {
+      background: rgba(0,0,0,0.94);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      padding: 14px 64px;
+      border-bottom-color: rgba(166,124,82,0.15);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .nav-logo-text {
+      font-family: var(--font-title);
+      font-size: 19px;
+      letter-spacing: 5px;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .nav-logo-sub {
+      font-size: 8px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-top: 2px;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover { color: var(--gold-light); }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--gold-gradient);
+      color: #000 !important;
+      padding: 10px 22px;
+      border-radius: 2px;
+      font-weight: 600 !important;
+      font-size: 12px !important;
+      letter-spacing: 0.5px;
+      text-transform: none !important;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+
+    /* Hamburger */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--white);
+      transition: var(--transition);
+    }
+
+    /* Mobile Menu */
+    #mobileMenu {
+      position: fixed;
+      inset: 0;
+      background: #000;
+      z-index: 890;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 38px;
+      transform: translateX(100%);
+      transition: transform 0.45s var(--ease);
+    }
+
+    #mobileMenu.open { transform: translateX(0); }
+
+    #mobileMenu a {
+      font-family: var(--font-title);
+      font-size: 26px;
+      letter-spacing: 3px;
+      color: var(--white);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    #mobileMenu a:hover { color: var(--gold-light); }
+
+    #mobileClose {
+      position: absolute;
+      top: 22px; right: 28px;
+      font-size: 26px;
+      color: var(--gray);
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    /* ================================================================
+       HERO
+    ================================================================ */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 140px 64px 90px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 70% at 75% 50%, rgba(166,124,82,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 50% at 5% 90%, rgba(166,124,82,0.04) 0%, transparent 50%);
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(166,124,82,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(166,124,82,0.035) 1px, transparent 1px);
+      background-size: 72px 72px;
+      -webkit-mask-image: radial-gradient(ellipse at center, black 15%, transparent 75%);
+      mask-image: radial-gradient(ellipse at center, black 15%, transparent 75%);
+    }
+
+    /* ================================================================
+       HERO PHOTO — Foto do fundador com gradient mask natural
+    ================================================================ */
+    .hero-photo-wrap {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 52%;
+      z-index: 1;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    /* gradient mask: funde esquerda + topo + baixo com o preto do site */
+    .hero-photo-wrap::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background:
+        linear-gradient(to right,
+          #000000 0%,
+          rgba(0,0,0,0.96) 10%,
+          rgba(0,0,0,0.72) 28%,
+          rgba(0,0,0,0.22) 50%,
+          transparent 70%
+        ),
+        linear-gradient(to bottom,
+          #000000 0%,
+          rgba(0,0,0,0.5) 8%,
+          transparent 20%,
+          transparent 78%,
+          rgba(0,0,0,0.6) 90%,
+          #000000 100%
+        );
+    }
+
+    .hero-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 12%;
+      display: block;
+      filter: brightness(0.82) contrast(1.08) saturate(0.88);
+    }
+
+    @media (max-width: 1100px) { .hero-photo-wrap { width: 46%; } }
+    @media (max-width: 720px)  { .hero-photo-wrap { display: none; } }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid rgba(166,124,82,0.35);
+      padding: 8px 20px;
+      border-radius: 100px;
+      margin-bottom: 44px;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .hero-badge-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--gold-gradient);
+      animation: pulse 2s infinite;
+    }
+
+    .hero-badge span {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      font-weight: 500;
+    }
+
+    .hero-title {
+      font-family: var(--font-title);
+      font-size: clamp(44px, 6.5vw, 86px);
+      line-height: 1.03;
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 30px;
+      opacity: 0;
+    }
+
+    .hero-title .line { display: block; overflow: hidden; }
+    .hero-title .line span { display: block; transform: translateY(105%); }
+
+    .hero-subtitle {
+      font-size: clamp(15px, 1.8vw, 19px);
+      color: var(--gray-light);
+      font-weight: 300;
+      max-width: 570px;
+      line-height: 1.75;
+      margin-bottom: 50px;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 56px;
+      margin-top: 72px;
+      opacity: 0;
+      transform: translateY(16px);
+      flex-wrap: wrap;
+    }
+
+    .hero-stat-number {
+      font-family: var(--font-title);
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1;
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-stat-label {
+      font-size: 11px;
+      color: var(--gray);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-top: 6px;
+    }
+
+    .hero-stat-divider {
+      width: 1px;
+      background: rgba(255,255,255,0.08);
+      align-self: stretch;
+    }
+
+    /* ================================================================
+       PAIN / SOLUTION
+    ================================================================ */
+    #pain {
+      padding: 110px 64px;
+      background: var(--dark);
+      position: relative;
+    }
+
+    #pain::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+      opacity: 0.4;
+    }
+
+    .pain-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .pain-items { display: flex; flex-direction: column; gap: 20px; }
+
+    .pain-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      padding: 24px 28px;
+      border: 1px solid rgba(255,255,255,0.055);
+      border-radius: 3px;
+      background: rgba(255,255,255,0.018);
+      transition: var(--transition);
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+
+    .pain-item:hover {
+      border-color: rgba(166,124,82,0.28);
+      background: rgba(166,124,82,0.035);
+    }
+
+    .pain-icon {
+      width: 50px; height: 50px;
+      min-width: 50px;
+      background: rgba(166,124,82,0.07);
+      border: 1px solid rgba(166,124,82,0.2);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-light);
+      transition: var(--transition);
+    }
+    .pain-icon svg { width: 22px; height: 22px; }
+    .pain-item:hover .pain-icon {
+      background: rgba(166,124,82,0.14);
+      border-color: rgba(166,124,82,0.38);
+    }
+
+    .pain-item h3 {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .pain-item p {
+      font-size: 13px;
+      color: var(--gray);
+      line-height: 1.65;
+    }
+
+    .pain-right {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+
+    .pain-highlight {
+      font-family: var(--font-title);
+      font-size: clamp(28px, 3.2vw, 48px);
+      line-height: 1.2;
+      margin-bottom: 28px;
+    }
+
+    .pain-desc {
+      font-size: 16px;
+      color: var(--gray-light);
+      line-height: 1.8;
+      margin-bottom: 38px;
+    }
+
+    /* ================================================================
+       SERVICES
+    ================================================================ */
+    #services {
+      padding: 110px 64px;
+      position: relative;
+    }
+
+    .services-wrap { max-width: 1200px; margin: 0 auto; }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      padding: 38px 32px;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 3px;
+      background: var(--dark-2);
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition);
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    .service-card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 2px;
+      height: 0;
+      background: var(--gold-gradient);
+      transition: height 0.45s var(--ease);
+    }
+
+    .service-card:hover {
+      border-color: rgba(166,124,82,0.18);
+      background: rgba(255,255,255,0.025);
+      transform: translateY(-4px);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+    }
+
+    .service-card:hover::after { height: 100%; }
+
+    .service-num {
+      font-family: var(--font-title);
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: rgba(166,124,82,0.5);
+      margin-bottom: 22px;
+    }
+
+    .service-icon {
+      width: 58px; height: 58px;
+      border-radius: 10px;
+      background: rgba(166,124,82,0.07);
+      border: 1px solid rgba(166,124,82,0.22);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 22px;
+      color: var(--gold-light);
+      transition: var(--transition);
+    }
+    .service-icon svg { width: 26px; height: 26px; }
+    .service-card:hover .service-icon {
+      background: rgba(166,124,82,0.14);
+      border-color: rgba(166,124,82,0.4);
+    }
+
+    .service-title {
+      font-family: var(--font-body);
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .service-desc {
+      font-size: 13.5px;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+    .service-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 22px;
+    }
+
+    .service-tag {
+      font-size: 10.5px;
+      padding: 3px 11px;
+      border: 1px solid rgba(166,124,82,0.28);
+      border-radius: 100px;
+      color: var(--gold-light);
+      letter-spacing: 0.3px;
+    }
+
+    /* ================================================================
+       RESULTS / STATS
+    ================================================================ */
+    #results {
+      padding: 110px 64px;
+      background: var(--dark);
+      position: relative;
+    }
+
+    #results::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+      opacity: 0.4;
+    }
+
+    .results-wrap { max-width: 1200px; margin: 0 auto; }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid rgba(166,124,82,0.12);
+      margin-bottom: 90px;
+    }
+
+    .stat-card {
+      padding: 48px 36px;
+      text-align: center;
+      border-right: 1px solid rgba(166,124,82,0.1);
+      background: rgba(0,0,0,0.4);
+      opacity: 0;
+      transform: translateY(28px);
+    }
+
+    .stat-card:last-child { border-right: none; }
+
+    .stat-number {
+      font-family: var(--font-title);
+      font-size: clamp(40px, 5vw, 62px);
+      font-weight: 700;
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: var(--gray);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .t-card {
+      padding: 34px;
+      border: 1px solid rgba(255,255,255,0.055);
+      border-radius: 3px;
+      background: rgba(255,255,255,0.015);
+      transition: var(--transition);
+      opacity: 0;
+      transform: translateY(28px);
+    }
+
+    .t-card:hover { border-color: rgba(166,124,82,0.2); }
+
+    .t-stars { color: var(--gold-light); font-size: 13px; margin-bottom: 14px; letter-spacing: 2px; }
+
+    .t-quote {
+      font-size: 38px;
+      color: var(--gold);
+      line-height: 0.8;
+      margin-bottom: 14px;
+      font-family: Georgia, serif;
+    }
+
+    .t-text {
+      font-size: 14.5px;
+      color: var(--gray-light);
+      line-height: 1.75;
+      font-style: italic;
+      margin-bottom: 26px;
+    }
+
+    .t-author { display: flex; align-items: center; gap: 13px; }
+
+    .t-avatar {
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: var(--gold-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #000;
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+
+    .t-name { font-size: 13.5px; font-weight: 600; }
+    .t-role { font-size: 11.5px; color: var(--gray); margin-top: 2px; }
+
+    /* ================================================================
+       PROCESS
+    ================================================================ */
+    #process {
+      padding: 110px 64px;
+      position: relative;
+    }
+
+    .process-wrap {
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 72px;
+      position: relative;
+    }
+
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 31px;
+      left: 12.5%;
+      right: 12.5%;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(166,124,82,0.8), rgba(166,124,82,0.15));
+    }
+
+    .process-step {
+      text-align: center;
+      padding: 0 24px;
+      opacity: 0;
+      transform: translateY(28px);
+    }
+
+    .process-num {
+      width: 62px; height: 62px;
+      border-radius: 50%;
+      border: 1.5px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-title);
+      font-size: 18px;
+      color: var(--gold-light);
+      margin: 0 auto 22px;
+      background: var(--black);
+      position: relative;
+      z-index: 2;
+    }
+
+    .process-step h3 {
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .process-step p {
+      font-size: 13px;
+      color: var(--gray);
+      line-height: 1.65;
+    }
+
+    /* ================================================================
+       FAQ
+    ================================================================ */
+    #faq {
+      padding: 110px 64px;
+      background: var(--dark);
+      position: relative;
+    }
+
+    #faq::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+      opacity: 0.4;
+    }
+
+    .faq-wrap { max-width: 780px; margin: 0 auto; }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      opacity: 0;
+      transform: translateY(18px);
+    }
+
+    .faq-question {
+      padding: 22px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      cursor: pointer;
+    }
+
+    .faq-question h3 {
+      font-family: var(--font-body);
+      font-size: 15.5px;
+      font-weight: 500;
+      color: var(--white);
+      transition: color 0.3s;
+      line-height: 1.4;
+    }
+
+    .faq-question:hover h3 { color: var(--gold-light); }
+
+    .faq-icon {
+      width: 28px; height: 28px;
+      min-width: 28px;
+      border: 1px solid rgba(166,124,82,0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1;
+      transition: var(--transition);
+    }
+
+    .faq-item.active .faq-icon {
+      background: var(--gold-gradient);
+      color: #000;
+      border-color: transparent;
+      transform: rotate(45deg);
+      font-weight: 400;
+    }
+
+    .faq-answer {
+      font-size: 14.5px;
+      color: var(--gray-light);
+      line-height: 1.8;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.45s var(--ease), padding 0.45s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 400px;
+      padding-bottom: 22px;
+    }
+
+    /* ================================================================
+       CTA FINAL
+    ================================================================ */
+    #cta {
+      padding: 130px 64px;
+      position: relative;
+      text-align: center;
+    }
+
+    .cta-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(166,124,82,0.11) 0%, transparent 70%);
+    }
+
+    .cta-grid-lines {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(166,124,82,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(166,124,82,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 2;
+      max-width: 680px;
+      margin: 0 auto;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .cta-title {
+      font-family: var(--font-title);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.1;
+      margin-bottom: 22px;
+    }
+
+    .cta-sub {
+      font-size: 17px;
+      color: var(--gray-light);
+      font-weight: 300;
+      margin-bottom: 48px;
+      line-height: 1.7;
+    }
+
+    .cta-disclaimer {
+      margin-top: 22px;
+      font-size: 12.5px;
+      color: var(--gray);
+      letter-spacing: 0.3px;
+    }
+
+    /* ================================================================
+       FOOTER
+    ================================================================ */
+    footer {
+      padding: 64px 64px 40px;
+      background: var(--dark);
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .footer-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 56px;
+      padding-bottom: 50px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .footer-brand-desc {
+      font-size: 13.5px;
+      color: var(--gray);
+      line-height: 1.8;
+      margin-top: 18px;
+      max-width: 280px;
+    }
+
+    .footer-col h4 {
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 11px; }
+
+    .footer-col a {
+      font-size: 13.5px;
+      color: var(--gray);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-col a:hover { color: var(--gold-light); }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 28px auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .footer-bottom p { font-size: 12.5px; color: var(--gray); }
+
+    /* ================================================================
+       FLOATING WHATSAPP
+    ================================================================ */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 800;
+      width: 58px; height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 32px rgba(37,211,102,0.38);
+      transition: var(--transition);
+      text-decoration: none;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.1) translateY(-2px);
+      box-shadow: 0 14px 44px rgba(37,211,102,0.48);
+    }
+
+    /* ================================================================
+       SECTION TRANSITIONS (Scroll Reveal base)
+    ================================================================ */
+    .sr { opacity: 0; transform: translateY(36px); transition: opacity 0.85s ease, transform 0.85s var(--ease); }
+    .sr.visible { opacity: 1; transform: translateY(0); }
+
+    /* ================================================================
+       RESPONSIVE
+    ================================================================ */
+    @media (max-width: 1100px) {
+      #navbar, #navbar.scrolled { padding-left: 32px; padding-right: 32px; }
+      #hero { padding: 130px 32px 80px; }
+      section { padding-left: 32px !important; padding-right: 32px !important; }
+      #pain { padding-left: 32px; padding-right: 32px; }
+      #results { padding-left: 32px; padding-right: 32px; }
+      #faq { padding-left: 32px; padding-right: 32px; }
+      #cta { padding-left: 32px; padding-right: 32px; }
+      footer { padding-left: 32px; padding-right: 32px; }
+
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .stats-row { grid-template-columns: repeat(2, 1fr); }
+      .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+      .process-steps { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+      .process-steps::before { display: none; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+      .pain-grid { grid-template-columns: 1fr; gap: 44px; }
+      .hero-photo-wrap { display: none; }
+    }
+
+    @media (max-width: 720px) {
+      #navbar, #navbar.scrolled { padding: 14px 22px; }
+      .nav-links, .nav-cta { display: none; }
+      .nav-hamburger { display: flex; }
+      #hero { padding: 110px 22px 70px; }
+      #pain, #services, #results, #process, #faq, #cta, footer { padding-left: 22px !important; padding-right: 22px !important; }
+
+      .services-grid { grid-template-columns: 1fr; }
+      .stats-row { grid-template-columns: repeat(2, 1fr); }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: 1fr; gap: 32px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .hero-stats { gap: 28px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8VZVTD7"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ============================================================
+       SPARTUS LOGO SYMBOL — definição global reutilizada em toda a página
+       O "A" dourado: forma triangular externa + vazio triangular interno (evenodd)
+       Gradiente: gold-light (#e3d08b) → gold (#a67c52) do topo à base
+  ============================================================ -->
+  <svg style="display:none;width:0;height:0;position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="spartusIconGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+        <stop offset="0%"   stop-color="#e3d08b"/>
+        <stop offset="55%"  stop-color="#c49a42"/>
+        <stop offset="100%" stop-color="#a67c52"/>
+      </linearGradient>
+      <!-- símbolo do ícone "A" da Spartus — reutilizável com <use href="#si"> -->
+      <symbol id="si" viewBox="0 0 100 100">
+        <path fill-rule="evenodd" fill="url(#spartusIconGrad)"
+          d="M43,8 L50,16 L56,27 L94,96 L6,96 Z
+             M50,43 L32,80 L68,80 Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ============================================================  PAGE LOADER ============================================================ -->
+  <div id="loader">
+    <div style="text-align:center;">
+      <div class="loader-logo" id="loaderLogo">
+        <img src="logo-spartus.png" alt="Spartus Digital" width="64" height="64" style="object-fit:contain;display:block;">
+        <div class="loader-text-block">
+          <span class="loader-wordmark">SPARTUS</span>
+          <span class="loader-sub">Digital Marketing Agency</span>
+        </div>
+      </div>
+    </div>
+    <div class="loader-bar-track">
+      <div class="loader-bar" id="loaderBar"></div>
+    </div>
+  </div>
+
+  <!-- ============================================================  MOBILE MENU ============================================================ -->
+  <div id="mobileMenu">
+    <span id="mobileClose">✕</span>
+    <a href="#pain" onclick="closeMobile()">Sobre</a>
+    <a href="#services" onclick="closeMobile()">Serviços</a>
+    <a href="#results" onclick="closeMobile()">Resultados</a>
+    <a href="#process" onclick="closeMobile()">Como Funciona</a>
+    <a href="#faq" onclick="closeMobile()">FAQ</a>
+    <a href="https://wa.me/5511940560991?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20serviços%20da%20Spartus."
+       target="_blank" onclick="closeMobile(); trackWA('mobile-menu')"
+       style="margin-top:16px; font-family:var(--font-body); font-size:15px;
+              background:var(--gold-gradient); color:#000; padding:14px 36px;
+              border-radius:2px; font-weight:600; letter-spacing:0.3px;">
+      Falar no WhatsApp
+    </a>
+  </div>
+
+  <!-- ============================================================  NAVIGATION ============================================================ -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">
+      <img src="logo-spartus.png" alt="Spartus Digital" width="38" height="38" style="object-fit:contain;display:block;">
+      <div>
+        <span class="nav-logo-text">SPARTUS</span>
+        <span class="nav-logo-sub">Digital Marketing Agency</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#pain">Sobre</a></li>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#results">Resultados</a></li>
+      <li><a href="#process">Como Funciona</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+
+    <a href="https://wa.me/5511940560991?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20os%20serviços%20da%20Spartus."
+       target="_blank" class="nav-cta" onclick="trackWA('nav')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.115 1.522 5.843L.057 23.82l6.129-1.607A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.003-1.366l-.36-.213-3.635.954.97-3.54-.234-.374A9.778 9.778 0 012.182 12C2.182 6.574 6.574 2.182 12 2.182S21.818 6.574 21.818 12 17.426 21.818 12 21.818z"/>
+      </svg>
+      Falar no WhatsApp
+    </a>
+
+    <div class="nav-hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ============================================================  HERO ============================================================ -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+
+    <!-- ============================================================
+         FOTO DO FUNDADOR — Gustavo Pontes
+         Salve sua foto nesta mesma pasta como: foto-gustavo.jpg
+         Caminho: C:\Users\User\Documents\Claude\Projects\Site Spartus Digital\foto-gustavo.jpg
+    ============================================================ -->
+    <div class="hero-photo-wrap" id="heroPhoto">
+      <img src="foto-gustavo.jpg"
+           alt="Gustavo Pontes — Fundador da Spartus Digital"
+           loading="eager"
+           onerror="this.parentElement.style.display='none'"/>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge" id="heroBadge">
+        <div class="hero-badge-dot"></div>
+        <span>Especialistas em brasileiros prestadores de serviços nos EUA</span>
+      </div>
+
+      <h1 class="hero-title" id="heroTitle">
+        <span class="line"><span>Mais clientes.</span></span>
+        <span class="line"><span>Mais faturamento.</span></span>
+        <span class="line"><span class="gold-text">Seu negócio crescendo.</span></span>
+      </h1>
+
+      <p class="hero-subtitle" id="heroSubtitle">
+        A Spartus é a agência que fala a sua língua e entende o seu mercado. Ajudamos brasileiros prestadores de serviços nos EUA a parar de depender de indicações e conquistar clientes de forma previsível, estratégica e escalável.
+      </p>
+
+      <div class="hero-ctas" id="heroCtas">
+        <a href="https://wa.me/5511940560991?text=Olá!%20Quero%20crescer%20meu%20negócio%20nos%20EUA%20com%20a%20Spartus."
+           target="_blank" class="btn-primary" onclick="trackWA('hero')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.115 1.522 5.843L.057 23.82l6.129-1.607A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.003-1.366l-.36-.213-3.635.954.97-3.54-.234-.374A9.778 9.778 0 012.182 12C2.182 6.574 6.574 2.182 12 2.182S21.818 6.574 21.818 12 17.426 21.818 12 21.818z"/>
+          </svg>
+          Quero mais clientes agora
+        </a>
+        <a href="#services" class="btn-secondary">Ver nossos serviços ↓</a>
+      </div>
+
+      <div class="hero-stats" id="heroStats">
+        <div>
+          <div class="hero-stat-number"><span class="counter" data-target="150">0</span>+</div>
+          <div class="hero-stat-label">Clientes Atendidos</div>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div>
+          <div class="hero-stat-number"><span class="counter" data-target="320">0</span>%</div>
+          <div class="hero-stat-label">Aumento Médio de Leads</div>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div>
+          <div class="hero-stat-number"><span class="counter" data-target="15">0</span>+</div>
+          <div class="hero-stat-label">Estados nos EUA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================  PAIN / SOLUTION ============================================================ -->
+  <section id="pain">
+    <div class="pain-grid">
+      <div class="pain-items" id="painItems">
+        <div>
+          <span class="section-label">Por que a Spartus existe</span>
+          <h2 class="section-title" style="max-width:460px;">O que os brasileiros que <span class="gold-text">mais faturam</span> nos EUA têm em comum</h2>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="pain-item">
+          <div class="pain-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Agenda cheia o ano inteiro — sem depender de indicação</h3>
+            <p>Os melhores negócios têm um sistema previsível de geração de clientes. Você também pode — e vai.</p>
+          </div>
+        </div>
+
+        <div class="pain-item">
+          <div class="pain-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Aparecer no Google exatamente quando o cliente está pronto para comprar</h3>
+            <p>Estar no topo das buscas no momento certo é a diferença entre ser escolhido ou ser ignorado.</p>
+          </div>
+        </div>
+
+        <div class="pain-item">
+          <div class="pain-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Marketing que domina o mercado americano — na sua língua</h3>
+            <p>Quem entende a dupla cultura vende mais. A Spartus traduz sua mensagem para o mercado que você quer conquistar.</p>
+          </div>
+        </div>
+
+        <div class="pain-item">
+          <div class="pain-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Clientes chegando automaticamente enquanto você trabalha</h3>
+            <p>Um sistema de marketing bem montado trabalha 24h por dia. Você foca no seu serviço — a Spartus foca em encher sua agenda.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pain-right" id="painRight">
+        <span class="section-label">A virada de chave</span>
+        <h2 class="pain-highlight">
+          Você veio para os EUA para <span class="gold-text">construir algo grande.</span> Hora de agir como quem já chegou lá.
+        </h2>
+        <p class="pain-desc">
+          Os brasileiros que mais crescem nos EUA não esperam indicação. Eles têm estratégia, presença digital e um fluxo constante de clientes novos chegando todo mês.<br><br>
+          A Spartus foi criada para te dar exatamente isso — com método comprovado, atendimento 100% em português e foco total no mercado americano.
+        </p>
+        <a href="https://wa.me/5511940560991?text=Quero%20meu%20diagnóstico%20gratuito%20com%20a%20Spartus!"
+           target="_blank" class="btn-primary" onclick="trackWA('pain')">
+          Quero meu diagnóstico gratuito agora →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================  SERVICES ============================================================ -->
+  <section id="services" style="padding: 110px 64px;">
+    <div class="services-wrap">
+      <div class="section-header sr" style="margin-bottom: 60px;">
+        <span class="section-label">O que fazemos</span>
+        <h2 class="section-title">Serviços que geram <span class="gold-text">resultados reais</span></h2>
+        <div class="gold-divider"></div>
+        <p class="section-subtitle">Cada serviço foi desenvolvido para o mercado americano, com estratégias adaptadas à realidade de quem presta serviços nos EUA e quer crescer com consistência.</p>
+      </div>
+
+      <div class="services-grid" id="servicesGrid">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="6"/>
+              <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/>
+              <line x1="22" y1="12" x2="19" y2="12"/>
+              <line x1="5" y1="12" x2="2" y2="12"/>
+              <line x1="12" y1="2" x2="12" y2="5"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Tráfego Pago</h3>
+          <p class="service-desc">Campanhas altamente segmentadas no Meta Ads e Google Ads para atrair clientes prontos para contratar seu serviço — com o menor custo por lead possível.</p>
+          <div class="service-tags">
+            <span class="service-tag">Meta Ads</span>
+            <span class="service-tag">Google Ads</span>
+            <span class="service-tag">Retargeting</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="5" r="3"/>
+              <circle cx="6" cy="12" r="3"/>
+              <circle cx="18" cy="19" r="3"/>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Gestão de Redes Sociais</h3>
+          <p class="service-desc">Presença profissional e consistente no Instagram, Facebook e TikTok — conteúdo que gera autoridade, conexão com o público e converte seguidores em clientes.</p>
+          <div class="service-tags">
+            <span class="service-tag">Instagram</span>
+            <span class="service-tag">Facebook</span>
+            <span class="service-tag">TikTok</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </div>
+          <h3 class="service-title">SEO Local</h3>
+          <p class="service-desc">Apareça no Google Maps e no topo das buscas quando clientes procurarem pelo seu serviço na sua cidade. Leads orgânicos todo mês, sem pagar por clique.</p>
+          <div class="service-tags">
+            <span class="service-tag">Google Business</span>
+            <span class="service-tag">SEO Local</span>
+            <span class="service-tag">Reviews</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8M12 17v4"/>
+              <path d="M9 9l-2 2 2 2M15 9l2 2-2 2"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Criação de Sites</h3>
+          <p class="service-desc">Sites rápidos, profissionais e otimizados para conversão. Sua vitrine digital que transmite credibilidade e transforma visitantes em clientes 24h por dia.</p>
+          <div class="service-tags">
+            <span class="service-tag">Landing Page</span>
+            <span class="service-tag">Conversão</span>
+            <span class="service-tag">Mobile-first</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">05</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+              <line x1="17" y1="17" x2="20" y2="17"/>
+              <polyline points="18.5 15.5 20 17 18.5 18.5"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Email Marketing & CRM</h3>
+          <p class="service-desc">Automações que nutrem leads, reativam clientes antigos e vendem enquanto você dorme. Sequências estratégicas que mantêm sua base quente e engajada.</p>
+          <div class="service-tags">
+            <span class="service-tag">Automação</span>
+            <span class="service-tag">Nurture</span>
+            <span class="service-tag">CRM</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">06</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 8 13 13 9 9 2 16"/>
+              <polyline points="16 8 22 8 22 14"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Consultoria Estratégica</h3>
+          <p class="service-desc">Diagnóstico completo, plano de ação personalizado e acompanhamento contínuo de resultados. Estratégia clara para escalar com previsibilidade e dados.</p>
+          <div class="service-tags">
+            <span class="service-tag">Diagnóstico</span>
+            <span class="service-tag">Estratégia</span>
+            <span class="service-tag">Métricas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================  RESULTS ============================================================ -->
+  <section id="results">
+    <div class="results-wrap">
+      <div class="section-header sr" style="margin-bottom: 60px;">
+        <span class="section-label">Resultados</span>
+        <h2 class="section-title">Números que <span class="gold-text">falam por si</span></h2>
+        <div class="gold-divider"></div>
+      </div>
+
+      <div class="stats-row" id="statsRow">
+        <div class="stat-card">
+          <div class="stat-number"><span class="counter" data-target="150">0</span>+</div>
+          <div class="stat-label">Clientes Atendidos</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number"><span class="counter" data-target="320">0</span>%</div>
+          <div class="stat-label">Aumento Médio de Leads</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">$<span class="counter" data-target="2">0</span>M+</div>
+          <div class="stat-label">Em Vendas Geradas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number"><span class="counter" data-target="15">0</span>+</div>
+          <div class="stat-label">Estados nos EUA</div>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="sr" style="margin-bottom: 40px; margin-top: 90px;">
+        <span class="section-label">Depoimentos</span>
+        <h2 class="section-title">O que nossos clientes <span class="gold-text">dizem</span></h2>
+      </div>
+
+      <div class="testimonials-grid" id="testimonialsGrid">
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <div class="t-quote">"</div>
+          <p class="t-text">Em 3 meses de parceria com a Spartus, minha agenda de limpeza residencial está completamente cheia. Passei de 2 para 20 clientes fixos, tudo com tráfego pago. Recomendo demais!</p>
+          <div class="t-author">
+            <div class="t-avatar">M</div>
+            <div>
+              <div class="t-name">Marcos Oliveira</div>
+              <div class="t-role">Cleaning Service — Miami, FL</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <div class="t-quote">"</div>
+          <p class="t-text">Antes dependia 100% de indicação. A Spartus montou minha presença no Google e hoje recebo 15 a 20 pedidos por semana sem gastar com anúncio. Incrível o resultado!</p>
+          <div class="t-author">
+            <div class="t-avatar">A</div>
+            <div>
+              <div class="t-name">Ana Paula Santos</div>
+              <div class="t-role">Nail Studio — Orlando, FL</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <div class="t-quote">"</div>
+          <p class="t-text">Profissionalismo total. Eles entendem o mercado americano mas falam nossa língua. Minha empresa de landscaping cresceu 40% em faturamento no primeiro trimestre de parceria.</p>
+          <div class="t-author">
+            <div class="t-avatar">R</div>
+            <div>
+              <div class="t-name">Ricardo Ferreira</div>
+              <div class="t-role">Landscaping — Houston, TX</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================  PROCESS ============================================================ -->
+  <section id="process" style="padding: 110px 64px;">
+    <div class="process-wrap">
+      <div class="section-header sr" style="text-align:center; margin-bottom: 0;">
+        <span class="section-label">Como funciona</span>
+        <h2 class="section-title">Do primeiro contato aos <span class="gold-text">primeiros resultados</span></h2>
+        <div class="gold-divider center"></div>
+        <p class="section-subtitle" style="margin: 0 auto; text-align: center;">Um processo claro, transparente e focado em crescimento real para o seu negócio.</p>
+      </div>
+
+      <div class="process-steps" id="processSteps">
+        <div class="process-step">
+          <div class="process-num">01</div>
+          <h3>Diagnóstico Gratuito</h3>
+          <p>Conversamos sobre seu negócio, mercado e objetivos. Identificamos os maiores obstáculos e as oportunidades de crescimento que você está perdendo.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">02</div>
+          <h3>Estratégia Personalizada</h3>
+          <p>Montamos um plano de marketing 100% adaptado à sua realidade — seu nicho, sua cidade, seu orçamento e suas metas de crescimento.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">03</div>
+          <h3>Execução e Implementação</h3>
+          <p>Nossa equipe coloca o plano em prática. Você acompanha tudo com relatórios claros e reuniões periódicas de alinhamento de resultados.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">04</div>
+          <h3>Crescimento Contínuo</h3>
+          <p>Monitoramos, otimizamos e escalamos. Cada mês melhor que o anterior — com dados concretos e decisões estratégicas que fazem seu negócio crescer.</p>
+        </div>
+      </div>
+
+      <div class="sr" style="text-align:center; margin-top: 70px;">
+        <a href="https://wa.me/5511940560991?text=Quero%20começar%20meu%20diagnóstico%20gratuito%20com%20a%20Spartus!"
+           target="_blank" class="btn-primary" onclick="trackWA('process')">
+          Começar meu diagnóstico gratuito →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================  FAQ ============================================================ -->
+  <section id="faq">
+    <div class="faq-wrap">
+      <div class="sr" style="text-align:center; margin-bottom: 60px;">
+        <span class="section-label">Dúvidas Frequentes</span>
+        <h2 class="section-title">Perguntas <span class="gold-text">frequentes</span></h2>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Posso contratar mesmo sendo autônomo nos EUA?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">Com certeza! Atendemos brasileiros em todas as fases — autônomos, sole proprietors, LLCs e empresas consolidadas. O que importa é que você presta serviços de qualidade e quer crescer. A Spartus cuida do marketing, você cuida do que faz de melhor.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Em quanto tempo minha agenda começa a encher?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">Com tráfego pago, clientes já entram em contato nas primeiras 2 a 4 semanas. SEO local começa a gerar leads orgânicos consistentes entre 60 e 120 dias. No seu diagnóstico gratuito, montamos um cronograma realista com as primeiras metas claras — para você saber exatamente o que esperar e quando.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>A Spartus atende o meu segmento?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">Já ajudamos brasileiros a crescer em cleaning, landscaping, construção civil, beleza (salões, nail studios, barbearias), gastronomia, saúde, advocacia, educação, consultoria e muito mais. Se você presta um serviço de valor nos EUA, temos a estratégia certa para te colocar na frente dos seus clientes ideais.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Qual é o investimento em marketing?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">Trabalhamos com orçamentos de mídia paga a partir de $300/mês — e cada dólar é gerenciado com foco máximo em retorno. No diagnóstico gratuito, calculamos o investimento ideal para o seu mercado e te mostramos a projeção de retorno esperado. Você decide com segurança, sem pressão.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Como é o atendimento — é tudo em português?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">100% em português, do primeiro contato aos relatórios mensais. A Spartus foi criada por e para brasileiros — você vai entender cada estratégia, cada número e cada decisão. Suas campanhas podem ser em português, inglês ou bilíngue, conforme o público que você quer alcançar.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Como funciona o contrato?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">Trabalhamos com contratos mensais, com total transparência. Você acompanha todos os resultados em tempo real e tem reuniões periódicas de alinhamento. Nossa parceria cresce conforme o seu negócio cresce — e nossos clientes renovam porque os resultados falam por si.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================  CTA FINAL ============================================================ -->
+  <section id="cta">
+    <div class="cta-bg"></div>
+    <div class="cta-grid-lines"></div>
+    <div class="cta-content" id="ctaContent">
+      <span class="section-label">Pronto para crescer?</span>
+      <h2 class="cta-title">
+        Seu próximo cliente está te<br><span class="gold-text">procurando agora.</span>
+      </h2>
+      <p class="cta-sub">
+        Agende uma conversa gratuita de 30 minutos e descubra exatamente como a Spartus pode transformar seu marketing em uma máquina previsível de geração de clientes.
+      </p>
+      <a href="https://wa.me/5511940560991?text=Olá!%20Quero%20agendar%20meu%20diagnóstico%20gratuito%20com%20a%20Spartus%20Digital!"
+         target="_blank" class="btn-primary" onclick="trackWA('cta')"
+         style="font-size:17px; padding:20px 52px; margin: 0 auto; display:inline-flex;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.115 1.522 5.843L.057 23.82l6.129-1.607A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.003-1.366l-.36-.213-3.635.954.97-3.54-.234-.374A9.778 9.778 0 012.182 12C2.182 6.574 6.574 2.182 12 2.182S21.818 6.574 21.818 12 17.426 21.818 12 21.818z"/>
+        </svg>
+        Quero meu diagnóstico gratuito
+      </a>
+      <p class="cta-disclaimer">✓ Sem compromisso &nbsp;·&nbsp; ✓ 100% em português &nbsp;·&nbsp; ✓ Resposta em até 24h</p>
+    </div>
+  </section>
+
+  <!-- ============================================================  FOOTER ============================================================ -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <a href="#" class="nav-logo" style="text-decoration:none; display:inline-flex;">
+          <img src="logo-spartus.png" alt="Spartus Digital" width="36" height="36" style="object-fit:contain;display:block;">
+          <div style="margin-left:10px;">
+            <span class="nav-logo-text" style="font-size:17px;">SPARTUS</span>
+            <span class="nav-logo-sub">Digital Marketing Agency</span>
+          </div>
+        </a>
+        <p class="footer-brand-desc">Agência de marketing digital especializada em ajudar brasileiros prestadores de serviços nos EUA a conquistar mais clientes e escalar seus negócios com estratégia e resultados reais.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#services">Tráfego Pago</a></li>
+          <li><a href="#services">Redes Sociais</a></li>
+          <li><a href="#services">SEO Local</a></li>
+          <li><a href="#services">Criação de Sites</a></li>
+          <li><a href="#services">Consultoria</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#pain">Sobre nós</a></li>
+          <li><a href="#results">Resultados</a></li>
+          <li><a href="#process">Como funciona</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:comercial@spartusdigital.com">comercial@spartusdigital.com</a></li>
+          <li><a href="https://wa.me/5511940560991" target="_blank">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/spartusdigital/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61587214906461" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Spartus Digital Marketing Agency. Todos os direitos reservados.</p>
+      <p style="color: var(--gold);">Feito com ♦ para brasileiros nos EUA</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5511940560991?text=Olá!%20Vim%20pelo%20site%20da%20Spartus%20e%20quero%20saber%20mais!"
+     target="_blank" class="wa-float" onclick="trackWA('float')" aria-label="WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.115 1.522 5.843L.057 23.82l6.129-1.607A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.003-1.366l-.36-.213-3.635.954.97-3.54-.234-.374A9.778 9.778 0 012.182 12C2.182 6.574 6.574 2.182 12 2.182S21.818 6.574 21.818 12 17.426 21.818 12 21.818z"/>
+    </svg>
+  </a>
+
+  <!-- ============================================================
+       anime.js (CDN)
+  ============================================================ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
+
+  <script>
+  // ================================================================
+  // LOADER
+  // ================================================================
+  window.addEventListener('load', () => {
+    const bar = document.getElementById('loaderBar');
+
+    // Animate logo & tagline in loader
+    anime({
+      targets: '#loaderLogo',
+      opacity: [0, 1],
+      translateY: [16, 0],
+      duration: 600,
+      easing: 'easeOutCubic'
+    });
+
+    // Progress bar
+    bar.style.width = '100%';
+
+    // Hide loader + kick off hero
+    setTimeout(() => {
+      document.getElementById('loader').classList.add('hidden');
+      initHero();
+    }, 1500);
+  });
+
+  // ================================================================
+  // HERO ANIMATIONS
+  // ================================================================
+  function initHero() {
+    // Page-enter overlay
+    const overlay = document.createElement('div');
+    overlay.style.cssText = 'position:fixed;inset:0;z-index:10000;background:#000;pointer-events:none;';
+    document.body.appendChild(overlay);
+    anime({ targets: overlay, opacity: [1,0], duration: 700, delay: 50,
+            easing: 'easeInOutQuad', complete: () => overlay.remove() });
+
+    // Badge
+    anime({ targets: '#heroBadge', opacity: [0,1], translateY: [20,0],
+            duration: 800, delay: 100, easing: 'easeOutCubic' });
+
+    // Title reveal (line by line)
+    document.getElementById('heroTitle').style.opacity = '1';
+    anime({ targets: '#heroTitle .line span', translateY: ['105%','0%'],
+            opacity: [0,1], duration: 900,
+            delay: anime.stagger(150, { start: 280 }), easing: 'easeOutExpo' });
+
+    // Subtitle
+    anime({ targets: '#heroSubtitle', opacity: [0,1], translateY: [20,0],
+            duration: 800, delay: 700, easing: 'easeOutCubic' });
+
+    // CTAs
+    anime({ targets: '#heroCtas', opacity: [0,1], translateY: [20,0],
+            duration: 800, delay: 900, easing: 'easeOutCubic' });
+
+    // Stats
+    anime({ targets: '#heroStats', opacity: [0,1], translateY: [16,0],
+            duration: 800, delay: 1100, easing: 'easeOutCubic' });
+
+    // Foto do fundador — entrada suave da direita
+    anime({ targets: '#heroPhoto', opacity: [0, 1], translateX: [24, 0],
+            duration: 1400, delay: 500, easing: 'easeOutCubic' });
+
+    // Hero counters (after stats appear)
+    setTimeout(() => {
+      document.querySelectorAll('#heroStats .counter').forEach(animateCounter);
+    }, 1900);
+  }
+
+  // ================================================================
+  // INTERSECTION OBSERVER — scroll-triggered animations
+  // ================================================================
+  const ioOptions = { threshold: 0.12, rootMargin: '0px 0px -50px 0px' };
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+
+      // Generic reveal
+      if (el.classList.contains('sr')) { el.classList.add('visible'); io.unobserve(el); return; }
+
+      // Pain items
+      if (el.id === 'painItems') {
+        anime({ targets: '#painItems .pain-item', opacity: [0,1], translateX: [-30,0],
+                duration: 700, delay: anime.stagger(130), easing: 'easeOutCubic' });
+        io.unobserve(el); return;
+      }
+
+      // Pain right
+      if (el.id === 'painRight') {
+        anime({ targets: '#painRight', opacity: [0,1], translateX: [30,0],
+                duration: 800, easing: 'easeOutCubic' });
+        io.unobserve(el); return;
+      }
+
+      // Services grid
+      if (el.id === 'servicesGrid') {
+        anime({ targets: '#servicesGrid .service-card', opacity: [0,1], translateY: [40,0],
+                duration: 700, delay: anime.stagger(100), easing: 'easeOutCubic' });
+        io.unobserve(el); return;
+      }
+
+      // Stats row
+      if (el.id === 'statsRow') {
+        anime({ targets: '#statsRow .stat-card', opacity: [0,1], translateY: [28,0],
+                duration: 700, delay: anime.stagger(90), easing: 'easeOutCubic' });
+        document.querySelectorAll('#statsRow .counter').forEach(animateCounter);
+        io.unobserve(el); return;
+      }
+
+      // Testimonials
+      if (el.id === 'testimonialsGrid') {
+        anime({ targets: '#testimonialsGrid .t-card', opacity: [0,1], translateY: [28,0],
+                duration: 700, delay: anime.stagger(130), easing: 'easeOutCubic' });
+        io.unobserve(el); return;
+      }
+
+      // Process
+      if (el.id === 'processSteps') {
+        anime({ targets: '#processSteps .process-step', opacity: [0,1], translateY: [28,0],
+                duration: 700, delay: anime.stagger(160), easing: 'easeOutCubic' });
+        io.unobserve(el); return;
+      }
+
+      // FAQ
+      if (el.classList.contains('faq-wrap')) {
+        anime({ targets: '.faq-item', opacity: [0,1], translateY: [18,0],
+                duration: 600, delay: anime.stagger(80), easing: 'easeOutCubic' });
+        io.unobserve(el); return;
+      }
+
+      // CTA
+      if (el.id === 'ctaContent') {
+        anime({ targets: '#ctaContent', opacity: [0,1], translateY: [30,0],
+                duration: 900, easing: 'easeOutCubic' });
+        io.unobserve(el); return;
+      }
+    });
+  }, ioOptions);
+
+  // Register all elements to observe
+  ['sr', 'pain-items', 'pain-right', 'services-grid', 'stats-row', 'testimonials-grid', 'process-steps', 'faq-wrap', 'cta-content'].forEach(() => {});
+
+  document.querySelectorAll('.sr, #painItems, #painRight, #servicesGrid, #statsRow, #testimonialsGrid, #processSteps, .faq-wrap, #ctaContent')
+    .forEach(el => io.observe(el));
+
+  // ================================================================
+  // COUNTER ANIMATION
+  // ================================================================
+  function animateCounter(el) {
+    const target = parseInt(el.dataset.target);
+    const duration = 1800;
+    const start = performance.now();
+    function tick(now) {
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(eased * target);
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  // ================================================================
+  // NAVBAR SCROLL
+  // ================================================================
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+  }, { passive: true });
+
+  // ================================================================
+  // MOBILE MENU
+  // ================================================================
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.add('open');
+  });
+  document.getElementById('mobileClose').addEventListener('click', closeMobile);
+  function closeMobile() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+  // ================================================================
+  // FAQ
+  // ================================================================
+  function toggleFaq(btn) {
+    const item = btn.parentElement;
+    const open = item.classList.contains('active');
+    document.querySelectorAll('.faq-item.active').forEach(i => i.classList.remove('active'));
+    if (!open) item.classList.add('active');
+  }
+
+  // ================================================================
+  // SMOOTH SCROLL
+  // ================================================================
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+
+  // ================================================================
+  // WHATSAPP + CONVERSION TRACKING
+  // ================================================================
+  function trackWA(location) {
+    // Facebook Pixel
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Lead', { content_name: 'WhatsApp', content_category: location });
+      fbq('track', 'Contact');
+    }
+    // Google Analytics 4
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'whatsapp_click', { event_category: 'engagement', event_label: location });
+    }
+    // GTM DataLayer
+    if (typeof dataLayer !== 'undefined') {
+      dataLayer.push({ event: 'whatsapp_click', click_location: location });
+    }
+  }
+
+  // ================================================================
+  // PARALLAX — subtle hero background on scroll
+  // ================================================================
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    const grid = document.querySelector('.hero-grid');
+    if (grid && y < window.innerHeight) {
+      grid.style.transform = `translateY(${y * 0.18}px)`;
+    }
+  }, { passive: true });
+  </script>
+
+  <!-- GTM noscript — descomente e adicione após <body> quando ativar GTM -->
+  <!--
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  -->
+</body>
+</html>
