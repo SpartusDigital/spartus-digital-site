@@ -181,7 +181,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      z-index: 9999;
+      z-index: 99999;
       transition: opacity 0.7s ease, visibility 0.7s ease;
     }
 
@@ -453,7 +453,27 @@
     }
 
     @media (max-width: 1100px) { .hero-photo-wrap { width: 46%; } }
-    @media (max-width: 720px)  { .hero-photo-wrap { display: none; } }
+    @media (max-width: 720px)  {
+      .hero-photo-wrap {
+        position: relative;
+        right: auto; top: auto;
+        width: calc(100% + 44px);
+        margin-left: -22px;
+        height: 58vw;
+        max-height: 340px;
+        flex-shrink: 0;
+      }
+      .hero-photo-wrap::before {
+        background:
+          linear-gradient(to bottom,
+            rgba(0,0,0,0.85) 0%,
+            transparent 28%,
+            transparent 62%,
+            rgba(0,0,0,0.85) 88%,
+            #000 100%
+          );
+      }
+    }
 
     .hero-content {
       position: relative;
@@ -1177,14 +1197,18 @@
       .process-steps::before { display: none; }
       .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
       .pain-grid { grid-template-columns: 1fr; gap: 44px; }
-      .hero-photo-wrap { display: none; }
     }
 
     @media (max-width: 720px) {
       #navbar, #navbar.scrolled { padding: 14px 22px; }
       .nav-links, .nav-cta { display: none; }
       .nav-hamburger { display: flex; }
-      #hero { padding: 110px 22px 70px; }
+      #hero {
+        flex-direction: column;
+        padding: 72px 0 60px;
+        align-items: stretch;
+      }
+      .hero-content { padding: 28px 22px 0; }
       #pain, #services, #results, #process, #faq, #cta, footer { padding-left: 22px !important; padding-right: 22px !important; }
 
       .services-grid { grid-template-columns: 1fr; }
@@ -1195,6 +1219,169 @@
       .footer-bottom { flex-direction: column; align-items: flex-start; }
       .hero-stats { gap: 28px; }
     }
+
+    /* ================================================================
+       GRAIN OVERLAY — textura premium
+    ================================================================ */
+    .grain-overlay {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9997;
+      opacity: 0.038;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 180px 180px;
+    }
+
+    /* ================================================================
+       CUSTOM CURSOR
+    ================================================================ */
+    @media (hover: hover) { * { cursor: none !important; } }
+    .cursor-dot {
+      position: fixed;
+      top: 0; left: 0;
+      width: 5px; height: 5px;
+      background: var(--gold);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 999999;
+      transform: translate(-50%,-50%);
+      will-change: left, top;
+      transition: opacity 0.2s ease;
+    }
+    .cursor-ring {
+      position: fixed;
+      top: 0; left: 0;
+      width: 36px; height: 36px;
+      border: 1px solid rgba(166,124,82,0.5);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 999998;
+      transform: translate(-50%,-50%);
+      will-change: left, top;
+      transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease, background 0.25s ease, opacity 0.2s ease;
+    }
+    .cursor-ring.hovering {
+      width: 58px; height: 58px;
+      border-color: rgba(166,124,82,0.8);
+      background: rgba(166,124,82,0.05);
+    }
+    @media (hover: none) { .cursor-dot, .cursor-ring { display: none; } }
+
+    /* ================================================================
+       SCROLL PROGRESS BAR
+    ================================================================ */
+    #scroll-progress {
+      position: fixed;
+      top: 0; left: 0;
+      height: 2px;
+      width: 0%;
+      background: linear-gradient(90deg, #a67c52 0%, #e3d08b 50%, #a67c52 100%);
+      background-size: 200%;
+      z-index: 10001;
+      pointer-events: none;
+      animation: shimmer-bar 2.5s linear infinite;
+    }
+    @keyframes shimmer-bar {
+      0% { background-position: 100% center; }
+      100% { background-position: -100% center; }
+    }
+
+    /* ================================================================
+       HERO CANVAS PARTICLES
+    ================================================================ */
+    #hero-particles {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* ================================================================
+       FLOATING ORBS
+    ================================================================ */
+    .vis-orb {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      filter: blur(70px);
+      animation: orb-float var(--orb-dur,9s) ease-in-out infinite;
+      animation-delay: var(--orb-delay,0s);
+      will-change: transform;
+    }
+    @keyframes orb-float {
+      0%,100% { transform: translate(-50%,-50%) scale(1); }
+      50% { transform: translate(-50%,-50%) translateY(-28px) scale(1.1); }
+    }
+
+    /* ================================================================
+       CARD SPOTLIGHT — raio de luz que segue o mouse
+    ================================================================ */
+    .service-card {
+      --sx: 50%; --sy: 50%;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle 220px at var(--sx) var(--sy), rgba(166,124,82,0.08) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 0;
+      pointer-events: none;
+      border-radius: inherit;
+    }
+    .service-card:hover::before { opacity: 1; }
+    .service-card > * { position: relative; z-index: 1; }
+
+    /* ================================================================
+       BADGE DOT PULSE
+    ================================================================ */
+    .hero-badge-dot {
+      animation: badge-pulse 2.5s ease-in-out infinite !important;
+    }
+    @keyframes badge-pulse {
+      0%,100% { box-shadow: 0 0 0 0 rgba(166,124,82,0.7); }
+      50% { box-shadow: 0 0 0 7px rgba(166,124,82,0); }
+    }
+
+    /* ================================================================
+       STAT CARD HOVER GLOW
+    ================================================================ */
+    .stat-card { transition: var(--transition); cursor: default; }
+    .stat-card:hover { background: rgba(166,124,82,0.04); }
+    .stat-card:hover .stat-number { filter: drop-shadow(0 0 14px rgba(166,124,82,0.55)); }
+
+    /* ================================================================
+       PROCESS NUM HOVER
+    ================================================================ */
+    .process-step:hover .process-num {
+      box-shadow: 0 0 0 6px rgba(166,124,82,0.1), 0 0 32px rgba(166,124,82,0.3);
+      background: rgba(166,124,82,0.08);
+    }
+
+    /* ================================================================
+       TESTIMONIAL CARD LIFT
+    ================================================================ */
+    .t-card {
+      transition: var(--transition), transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .t-card:hover {
+      transform: translateY(-8px) !important;
+      box-shadow: 0 32px 64px rgba(0,0,0,0.45), 0 0 0 1px rgba(166,124,82,0.14);
+    }
+
+    /* ================================================================
+       MAGNETIC BUTTON TRANSITION OVERRIDE
+    ================================================================ */
+    .btn-primary, .nav-cta {
+      transition: opacity 0.3s ease, box-shadow 0.3s ease, transform 0.15s cubic-bezier(0.25,0.46,0.45,0.94) !important;
+    }
+
+    /* ================================================================
+       SECTION OVERFLOW (orbs)
+    ================================================================ */
+    #services, #pain, #results, #process, #cta { overflow: hidden; }
   </style>
 </head>
 
@@ -1230,7 +1417,7 @@
   <div id="loader">
     <div style="text-align:center;">
       <div class="loader-logo" id="loaderLogo">
-        <img src="logo-spartus.png" alt="Spartus Digital" width="64" height="64" style="object-fit:contain;display:block;">
+        <img src="logo-spartus-real.jpg" alt="Spartus Digital" width="64" height="64" style="object-fit:contain;display:block;border-radius:6px;">
         <div class="loader-text-block">
           <span class="loader-wordmark">SPARTUS</span>
           <span class="loader-sub">Digital Marketing Agency</span>
@@ -1262,7 +1449,7 @@
   <!-- ============================================================  NAVIGATION ============================================================ -->
   <nav id="navbar">
     <a href="#" class="nav-logo">
-      <img src="logo-spartus.png" alt="Spartus Digital" width="38" height="38" style="object-fit:contain;display:block;">
+      <img src="logo-spartus-real.jpg" alt="Spartus Digital" width="38" height="38" style="object-fit:contain;display:block;border-radius:4px;">
       <div>
         <span class="nav-logo-text">SPARTUS</span>
         <span class="nav-logo-sub">Digital Marketing Agency</span>
@@ -1771,7 +1958,7 @@
     <div class="footer-grid">
       <div>
         <a href="#" class="nav-logo" style="text-decoration:none; display:inline-flex;">
-          <img src="logo-spartus.png" alt="Spartus Digital" width="36" height="36" style="object-fit:contain;display:block;">
+          <img src="logo-spartus-real.jpg" alt="Spartus Digital" width="36" height="36" style="object-fit:contain;display:block;border-radius:4px;">
           <div style="margin-left:10px;">
             <span class="nav-logo-text" style="font-size:17px;">SPARTUS</span>
             <span class="nav-logo-sub">Digital Marketing Agency</span>
@@ -2061,6 +2248,184 @@
       grid.style.transform = `translateY(${y * 0.18}px)`;
     }
   }, { passive: true });
+  </script>
+
+  <!-- ============================================================
+       EFEITOS VISUAIS IMERSIVOS — Grain · Cursor · Partículas · Tilt · Orbs
+  ============================================================ -->
+  <script>
+  (function() {
+    'use strict';
+
+    // ── GRAIN OVERLAY ──────────────────────────────────────────
+    const grain = document.createElement('div');
+    grain.className = 'grain-overlay';
+    document.body.appendChild(grain);
+
+    // ── SCROLL PROGRESS BAR ───────────────────────────────────
+    const progressBar = document.createElement('div');
+    progressBar.id = 'scroll-progress';
+    document.body.appendChild(progressBar);
+
+    window.addEventListener('scroll', () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = (window.scrollY / max * 100).toFixed(2) + '%';
+    }, { passive: true });
+
+    // ── CUSTOM CURSOR ─────────────────────────────────────────
+    const isTouch = window.matchMedia('(hover: none)').matches;
+    if (!isTouch) {
+      const dot  = document.createElement('div');
+      const ring = document.createElement('div');
+      dot.className  = 'cursor-dot';
+      ring.className = 'cursor-ring';
+      document.body.appendChild(dot);
+      document.body.appendChild(ring);
+
+      let mx = -200, my = -200, rx = -200, ry = -200;
+
+      document.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        dot.style.left = mx + 'px';
+        dot.style.top  = my + 'px';
+      });
+
+      (function trackRing() {
+        rx += (mx - rx) * 0.13;
+        ry += (my - ry) * 0.13;
+        ring.style.left = rx + 'px';
+        ring.style.top  = ry + 'px';
+        requestAnimationFrame(trackRing);
+      })();
+
+      const hoverEls = document.querySelectorAll('a, button, .service-card, .t-card, .pain-item, label');
+      hoverEls.forEach(el => {
+        el.addEventListener('mouseenter', () => ring.classList.add('hovering'));
+        el.addEventListener('mouseleave', () => ring.classList.remove('hovering'));
+      });
+
+      document.addEventListener('mouseleave', () => { dot.style.opacity='0'; ring.style.opacity='0'; });
+      document.addEventListener('mouseenter', () => { dot.style.opacity='1'; ring.style.opacity='1'; });
+    }
+
+    // ── CANVAS PARTICLES — Hero ───────────────────────────────
+    const hero = document.getElementById('hero');
+    if (hero) {
+      const canvas = document.createElement('canvas');
+      canvas.id = 'hero-particles';
+      hero.insertBefore(canvas, hero.firstChild);
+
+      const ctx = canvas.getContext('2d');
+      let W, H, rafId, visible = true;
+
+      function resize() {
+        W = canvas.width  = hero.offsetWidth;
+        H = canvas.height = hero.offsetHeight;
+      }
+      resize();
+      window.addEventListener('resize', resize, { passive: true });
+
+      // Pausa quando hero sai da viewport
+      const visObs = new IntersectionObserver(e => { visible = e[0].isIntersecting; }, { threshold: 0 });
+      visObs.observe(hero);
+
+      const N = 38; // reduzido de 60
+      const pts = Array.from({ length: N }, () => ({
+        x:  Math.random() * 1000,
+        y:  Math.random() * 800,
+        r:  Math.random() * 1.2 + 0.3,
+        vx: (Math.random() - 0.5) * 0.22,
+        vy: (Math.random() - 0.5) * 0.22,
+        a:  Math.random() * 0.5 + 0.08,
+        da: (Math.random() - 0.5) * 0.003,
+      }));
+
+      let frame = 0;
+      (function drawParts() {
+        rafId = requestAnimationFrame(drawParts);
+        if (!visible) return;
+        frame++;
+        if (frame % 2 !== 0) return; // roda a cada 2 frames (~30fps)
+        ctx.clearRect(0, 0, W, H);
+        pts.forEach(p => {
+          p.x += p.vx; p.y += p.vy;
+          p.a += p.da;
+          if (p.a > 0.58) p.da = -Math.abs(p.da);
+          if (p.a < 0.06) p.da =  Math.abs(p.da);
+          if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+          if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(166,124,82,${p.a.toFixed(2)})`;
+          ctx.fill();
+        });
+      })();
+    }
+
+    // ── FLOATING ORBS ─────────────────────────────────────────
+    const orbConfig = [
+      { sel: '#services', x:'82%', y:'20%', s:260, c:'rgba(166,124,82,0.06)',  dur:'10s', delay:'0s' },
+      { sel: '#pain',     x:'88%', y:'45%', s:240, c:'rgba(166,124,82,0.05)',  dur:'11s', delay:'1s' },
+      { sel: '#results',  x:'6%',  y:'35%', s:220, c:'rgba(166,124,82,0.055)', dur:'9s',  delay:'3s' },
+      { sel: '#cta',      x:'50%', y:'55%', s:360, c:'rgba(166,124,82,0.06)',  dur:'8s',  delay:'0s' },
+    ];
+
+    orbConfig.forEach(o => {
+      const sec = document.querySelector(o.sel);
+      if (!sec) return;
+      const orb = document.createElement('div');
+      orb.className = 'vis-orb';
+      orb.style.cssText = `left:${o.x};top:${o.y};width:${o.s}px;height:${o.s}px;background:${o.c};--orb-dur:${o.dur};--orb-delay:${o.delay};`;
+      sec.appendChild(orb);
+    });
+
+    // ── CARD SPOTLIGHT — luz segue o mouse ─────────────────────
+    document.querySelectorAll('.service-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        card.style.setProperty('--sx', ((e.clientX - r.left) / r.width  * 100).toFixed(1) + '%');
+        card.style.setProperty('--sy', ((e.clientY - r.top)  / r.height * 100).toFixed(1) + '%');
+      });
+    });
+
+    // ── 3D TILT — cards de serviço e depoimentos ──────────────
+    if (!isTouch) {
+      document.querySelectorAll('.service-card, .t-card').forEach(card => {
+        const TILT = 7;
+        card.style.willChange = 'transform';
+
+        card.addEventListener('mouseenter', () => {
+          card.style.transition = 'transform 0.1s ease';
+        });
+        card.addEventListener('mousemove', e => {
+          const r = card.getBoundingClientRect();
+          const xP = (e.clientX - r.left) / r.width  - 0.5;
+          const yP = (e.clientY - r.top)  / r.height - 0.5;
+          card.style.transform = `perspective(900px) rotateX(${(-yP * TILT).toFixed(2)}deg) rotateY(${(xP * TILT).toFixed(2)}deg) translateY(-6px) scale(1.015)`;
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transition = 'transform 0.55s cubic-bezier(0.25,0.46,0.45,0.94)';
+          card.style.transform = '';
+        });
+      });
+    }
+
+    // ── MAGNETIC BUTTONS ──────────────────────────────────────
+    if (!isTouch) {
+      document.querySelectorAll('.btn-primary, .nav-cta').forEach(btn => {
+        btn.addEventListener('mousemove', e => {
+          const r = btn.getBoundingClientRect();
+          const x = e.clientX - r.left - r.width  / 2;
+          const y = e.clientY - r.top  - r.height / 2;
+          btn.style.transform = `translate(${(x * 0.2).toFixed(2)}px, ${(y * 0.2).toFixed(2)}px) translateY(-2px)`;
+        });
+        btn.addEventListener('mouseleave', () => {
+          btn.style.transform = '';
+        });
+      });
+    }
+
+  })();
   </script>
 
   <!-- GTM noscript — descomente e adicione após <body> quando ativar GTM -->
